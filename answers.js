@@ -114,8 +114,12 @@ function upperCaseFirstLetters( string )
 }
 console.log(upperCaseFirstLetters("JumP eveRyBodY! JUMP! jump! i need you to jUmP everyBody!"));
 
-
-
+// 12 - Here is a function which returns the largest value in an array.
+var someNumbers=[34,22,41,28,4,33,42,18,25];
+function getMaxOfArray(numArray) {
+  return Math.max.apply(null, numArray);
+}
+console.log(       getMaxOfArray(someNumbers)       );
 
 
 
