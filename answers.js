@@ -101,7 +101,18 @@ function findLongestWord(string) {
 }
 console.log(findLongestWord("I am a man, in a city and I cannot believe the people around me"));
 
-
+// 11 - Capitalize first letters of words, everything else lower case
+function upperCaseFirstLetters( string )
+{
+    var chunks = string.split(" ");
+    for (var i = 0; i < chunks.length; i++)
+    {
+        var u = chunks[i].charAt(0).toUpperCase();
+        chunks[i] = u + chunks[i].substr(1).toLowerCase();
+    }
+    return chunks.join(" ");
+}
+console.log(upperCaseFirstLetters("JumP eveRyBodY! JUMP! jump! i need you to jUmP everyBody!"));
 
 
 
