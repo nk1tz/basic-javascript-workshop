@@ -131,6 +131,11 @@ function filterForTruthey(array){
 }
 console.log(filterForTruthey(someArray));
 
+// 14 - Return the sum of all elements of an array
+var array2 = [11, 9, 13, 12, 5];
+var sum = array2.reduce(function(total, num) {
+    return total + num });
+console.log(sum);
 
 
 
