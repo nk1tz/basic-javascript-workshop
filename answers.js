@@ -54,18 +54,22 @@ console.log(operate(21,7,"div"));
 
 // 7 - reapeat a string "n" times
 function repeat(string,num){
-    var i = 0;
     var rep = "";
-    for(i=0;i<num;i++){
+    for(var i=0;i<num;i++){
         rep += string;
     }
     return rep;
 }
 console.log(repeat("Eminem", 8));
 
-
-
-
+// 8 - reverse a string
+function reverse(s){
+     var o = '';
+  for (var i = s.length - 1; i >= 0; i--)
+    o += s[i];
+  return o;
+}
+console.log(reverse("Nice face potato smacker"));
 
 
 
