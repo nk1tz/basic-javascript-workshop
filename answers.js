@@ -71,6 +71,65 @@ function reverse(s){
 }
 console.log(reverse("Nice face potato smacker"));
 
+// 9 - Returns the Factorial of a number "num"
+function factorial(num)
+{
+    if (num < 0) { //reject negative nums
+        return "That's negative number!";
+    }
+    else if (num == 0) {
+        return 1;
+    }
+    else {
+        return (num * factorial(num - 1));
+    }
+}
+console.log(factorial(8));
+
+// 10 - Return longest word in a sentence
+function findLongestWord(string) {
+    var str = string.split(" ");
+    var longest = 0;
+    var word = null;
+    for (var i = 0; i < str.length; i++) {
+        if (longest < str[i].length) {
+            longest = str[i].length;
+            word = str[i];
+        }
+    }
+    return word;
+}
+console.log(findLongestWord("I am a man, in a city and I cannot believe the people around me"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
