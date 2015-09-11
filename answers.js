@@ -15,3 +15,10 @@ function specificChar(string,num){
      return string[num];
 }
 console.log(specificChar("Kayla", 4));
+
+// 4 - Takes two numbers and adds them
+//If strings are passed this function returns "NaN"
+function multiply(num1,num2){
+    return num1*num2;
+}
+console.log(multiply("Cough","hi"));
