@@ -137,6 +137,28 @@ var sum = array2.reduce(function(total, num) {
     return total + num });
 console.log(sum);
 
+// 15 - compares two arrays and creates new one with unique values only
+var arrayA = [3, 5, 19, 4, 22, 88];
+var arrayB = [3, 1, 19, 5, 21, 88, 99];
+
+var arrayC = arrayA.filter(function(obj) { return arrayB.indexOf(obj) == -1; });
+var arrayD = arrayB.filter(function(obj) { return arrayA.indexOf(obj) == -1; });
+var arrayE = arrayC.concat(arrayD);
+// var o = {};
+// for(var i in arrayA) {
+//     o[i] = 1;
+// }
+// for(var i in arrayB) {
+//     o[i] = 0;
+// }
+// var arrayC = [i];
+// for(var i in o) {
+//     if(o[i] == 1) {
+//         arrayC.push(i);
+//     }
+// }
+console.log(arrayE);
+
 
 
 
