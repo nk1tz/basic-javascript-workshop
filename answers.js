@@ -29,3 +29,25 @@ function addition(num1,num2){
     return num1+num2;
 }
 console.log(addition(43,89));
+
+// 6 - add, sub, div, or mult two numbers with this function
+function operate(num1,num2,string){
+    switch (string) {
+        case 'add':
+            return addition(num1,num2);
+            break;
+        case 'sub':
+            return num1-num2;
+            break;
+        case 'mult':
+            return multiply(num1,num2);
+            break;    
+        case 'div':
+            return num1/num2;
+            break;
+            
+        default:
+            return 0;
+    }
+}
+console.log(operate(21,7,"div"));
