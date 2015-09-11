@@ -159,7 +159,17 @@ var arrayE = arrayC.concat(arrayD);
 // }
 console.log(arrayE);
 
-
+// 16 - Write out a mapping function with using .map
+var arrayA1 = [5,26,54,11,2,35,84,4]
+function square(num){
+    return num*num;
+}
+function fakeMap(arr, foo){
+    var arrayA2 = [arr.length];
+    for(var i in arr) arrayA2[i] = foo(arr[i]);
+    return arrayA2;
+}
+console.log( fakeMap(arrayA1,square) );
 
 
 
