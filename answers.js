@@ -22,3 +22,10 @@ function multiply(num1,num2){
     return num1*num2;
 }
 console.log(multiply("Cough","hi"));
+
+// 5 - Takes two numbers and adds them together
+//If strings are passed this function returns "NaN"
+function addition(num1,num2){
+    return num1+num2;
+}
+console.log(addition(43,89));
