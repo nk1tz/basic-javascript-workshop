@@ -51,3 +51,33 @@ function operate(num1,num2,string){
     }
 }
 console.log(operate(21,7,"div"));
+
+// 7 - reapeat a string "n" times
+function repeat(string,num){
+    var i = 0;
+    var rep = "";
+    for(i=0;i<num;i++){
+        rep += string;
+    }
+    return rep;
+}
+console.log(repeat("Eminem", 8));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
