@@ -121,6 +121,51 @@ function getMaxOfArray(numArray) {
 }
 console.log(       getMaxOfArray(someNumbers)       );
 
+// 13 - Filter an array for "truthey" values
+var someArray = ["habs",76,null,9,0,false,"perception",33]
+function filterForTruthey(array){
+    var filteredArr = array.filter(function(val) {
+	    return !(val === "" || typeof val == "undefined" || val === null || val === false || val === 0);
+    });
+    return filteredArr;
+}
+console.log(filterForTruthey(someArray));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
