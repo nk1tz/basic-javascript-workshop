@@ -172,6 +172,9 @@ function fakeMap(arr, foo){
 console.log( fakeMap(arrayA1,square) );
 
 
+//Challenge 1 - create fortune.js
+
+
 
 
 
