@@ -24,7 +24,6 @@ function multiply(num1,num2){
 console.log(multiply("Cough","hi"));
 
 // 5 - Takes two numbers and adds them together
-//If strings are passed this function returns "NaN"
 function addition(num1,num2){
     return num1+num2;
 }
@@ -35,16 +34,12 @@ function operate(num1,num2,string){
     switch (string) {
         case 'add':
             return addition(num1,num2);
-            break;
         case 'sub':
             return num1-num2;
-            break;
         case 'mult':
             return multiply(num1,num2);
-            break;    
         case 'div':
             return num1/num2;
-            break;
             
         default:
             return 0;
@@ -65,8 +60,7 @@ console.log(repeat("Eminem", 8));
 // 8 - reverse a string
 function reverse(s){
      var o = '';
-  for (var i = s.length - 1; i >= 0; i--)
-    o += s[i];
+  for (var i = s.length - 1; i >= 0; i--) o += s[i];
   return o;
 }
 console.log(reverse("Nice face potato smacker"));
@@ -90,7 +84,7 @@ console.log(factorial(8));
 function findLongestWord(string) {
     var str = string.split(" ");
     var longest = 0;
-    var word = null;
+    var word;
     for (var i = 0; i < str.length; i++) {
         if (longest < str[i].length) {
             longest = str[i].length;
@@ -133,31 +127,23 @@ console.log(filterForTruthey(someArray));
 
 // 14 - Return the sum of all elements of an array
 var array2 = [11, 9, 13, 12, 5];
-var sum = array2.reduce(function(total, num) {
+function sumOfArray(arr){
+    return arr.reduce(function(total, num) {
     return total + num });
-console.log(sum);
+}
+console.log(sumOfArray(array2));
 
 // 15 - compares two arrays and creates new one with unique values only
 var arrayA = [3, 5, 19, 4, 22, 88];
 var arrayB = [3, 1, 19, 5, 21, 88, 99];
 
-var arrayC = arrayA.filter(function(obj) { return arrayB.indexOf(obj) == -1; });
-var arrayD = arrayB.filter(function(obj) { return arrayA.indexOf(obj) == -1; });
-var arrayE = arrayC.concat(arrayD);
-// var o = {};
-// for(var i in arrayA) {
-//     o[i] = 1;
-// }
-// for(var i in arrayB) {
-//     o[i] = 0;
-// }
-// var arrayC = [i];
-// for(var i in o) {
-//     if(o[i] == 1) {
-//         arrayC.push(i);
-//     }
-// }
-console.log(arrayE);
+function uniqueValues(arr1,arr2){
+    var arrayC = arrayA.filter(function(obj) { return arrayB.indexOf(obj) == -1; });
+    var arrayD = arrayB.filter(function(obj) { return arrayA.indexOf(obj) == -1; });
+    var arrayE = arrayC.concat(arrayD);
+    return arrayE;
+}
+console.log(uniqueValues(arrayA, arrayB));
 
 // 16 - Write out a mapping function with using .map
 var arrayA1 = [5,26,54,11,2,35,84,4]
@@ -166,13 +152,11 @@ function square(num){
 }
 function fakeMap(arr, foo){
     var arrayA2 = [arr.length];
-    for(var i in arr) arrayA2[i] = foo(arr[i]);
+    for(var i = 0; i<arr.length; i++) arrayA2[i] = foo(arr[i]);
     return arrayA2;
 }
 console.log( fakeMap(arrayA1,square) );
 
-
-//Challenge 1 - create fortune.js
 
 
 
